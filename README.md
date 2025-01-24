@@ -1,3 +1,27 @@
+# NOTICE: FORKED REPO, Maintence Only
+
+I have forked this repo to maintain the original. I have merged the following PRs from [The Original](https://github.com/smicallef/spiderfoot/pulls)
+
+- [Add integration with ipbase.com #1773 ](https://github.com/smicallef/spiderfoot/pull/1773)
+- [(fix): explicitly install npm in Dockerfile.full #1795](https://github.com/smicallef/spiderfoot/pull/1795)
+- [Update Alpine base image to v3.18 in Dockerfile #1798](https://github.com/smicallef/spiderfoot/pull/1798)
+- [sfp_deepinfo: Add Deepinfo module #1779](https://github.com/smicallef/spiderfoot/pull/1779)
+- [Add InternetDB module #1824](https://github.com/smicallef/spiderfoot/pull/1824)
+- [Improve README #1775](https://github.com/smicallef/spiderfoot/pull/1775)
+- [Add ip2location.io module. #1815](https://github.com/smicallef/spiderfoot/pull/1815)
+- [spf_accounts: Support sites with unsupported characters (#1803) #1828](https://github.com/smicallef/spiderfoot/pull/1828)
+- [added WhoisFreaks module for reverse whois by owner email, owner name, or owner company name #1838 ](https://github.com/smicallef/spiderfoot/pull/1838)
+- [fixed errors on Dockerfile.full and docker-compose-full.yml #1840](https://github.com/smicallef/spiderfoot/pull/1840)
+- [Update sfp_dns_for_family.py #1872](https://github.com/smicallef/spiderfoot/pull/1872)
+- [Update nmap module #1879](https://github.com/smicallef/spiderfoot/pull/1879)
+- [LeakCheck Integration #1889](https://github.com/smicallef/spiderfoot/pull/1889)
+- [Update sfp_accounts.py #1894](https://github.com/smicallef/spiderfoot/pull/1894)
+
+For [Fixes #1897 #1900](https://github.com/smicallef/spiderfoot/pull/1900): 
+- I did a partial merge manually, bumping version numbers, and making code changes I felt wouldn't cause any issues. 
+
+
+
 <a href="https://www.spiderfoot.net/r.php?u=aHR0cHM6Ly93d3cuc3BpZGVyZm9vdC5uZXQv&s=os_gh"><img src="https://www.spiderfoot.net/wp-content/themes/spiderfoot/img/spiderfoot-wide.png"></a>
 
 
