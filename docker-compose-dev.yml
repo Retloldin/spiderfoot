@@ -1,6 +1,17 @@
-version: "3"
+# Dev environment (code directory mapped into the container):
+#   $ docker compose -f docker-compose.yml -f docker-compose-dev.yml up
 
 services:
   spiderfoot:
     volumes:
-      - .:/home/spiderfoot
+      - .:/home/spiderfoot # Mount local code directory into the container
+    container_name: spiderfoot-dev
+    ports:
+      - "5001:5001" # Ensure the same port mapping if required
+    restart: unless-stopped
+    logging: # Optional, for debugging logs in development
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
