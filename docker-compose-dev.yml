@@ -5,13 +5,5 @@ services:
   spiderfoot:
     volumes:
       - .:/home/spiderfoot # Mount local code directory into the container
-    container_name: spiderfoot-dev
-    ports:
-      - "5001:5001" # Ensure the same port mapping if required
-    restart: unless-stopped
-    logging: # Optional, for debugging logs in development
-      driver: json-file
-      options:
-        max-size: "10m"
-        max-file: "3"
+
 

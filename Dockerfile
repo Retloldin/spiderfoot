@@ -53,9 +53,9 @@ FROM alpine:3.18
 WORKDIR /home/spiderfoot
 
 # Place database and logs outside installation directory
-ENV SPIDERFOOT_DATA /var/lib/spiderfoot
-ENV SPIDERFOOT_LOGS /var/lib/spiderfoot/log
-ENV SPIDERFOOT_CACHE /var/lib/spiderfoot/cache
+ENV SPIDERFOOT_DATA=/var/lib/spiderfoot
+ENV SPIDERFOOT_LOGS=/var/lib/spiderfoot/log
+ENV SPIDERFOOT_CACHE=/var/lib/spiderfoot/cache
 
 # Run everything as one command so that only one layer is created
 RUN apk --update --no-cache add python3 musl openssl libxslt tinyxml libxml2 jpeg zlib openjpeg \
