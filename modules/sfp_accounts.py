@@ -80,7 +80,7 @@ class sfp_accounts(SpiderFootPlugin):
 
         content = self.sf.cacheGet("sfaccountsv2", 48)
         if content is None:
-            url = "https://raw.githubusercontent.com/WebBreacher/WhatsMyName/main/wmn-data.json"
+            url = "https://raw.githubusercontent.com/WebBreacher/WhatsMyName/refs/heads/main/wmn-data.json"
             data = self.sf.fetchUrl(url, useragent="SpiderFoot")
 
             if data['content'] is None:
@@ -106,18 +106,17 @@ class sfp_accounts(SpiderFootPlugin):
                 "SIMILAR_ACCOUNT_EXTERNAL"]
 
     def checkSite(self, name, site):
-        if 'uri_check' not in site:
+        if 'check_uri' not in site:
             return
 
-        if site.get('strip_bad_char'):
-            # Remove unsupported characters (see https://github.com/WebBreacher/WhatsMyName/issues/738)
-            for char in site['strip_bad_char']: name=name.replace(char, "")
-        
-        url = site['uri_check'].format(account=name)
+        url = site['check_uri'].format(account=name)
         if 'uri_pretty' in site:
             ret_url = site['uri_pretty'].format(account=name)
+        elif 'pretty_uri' in site: 
+            ret_url = site['pretty_uri'].format(account=name)
         else:
             ret_url = url
+        
         retname = f"{site['name']} (Category: {site['cat']})\n<SFURL>{ret_url}</SFURL>"
 
         post = None
