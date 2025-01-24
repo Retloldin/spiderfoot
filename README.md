@@ -1,4 +1,4 @@
-# NOTICE: FORKED REPO, Maintence Only
+# NOTICE: FORKED REPO, Maintenance Only, PR's Welcome. 
 
 I have forked this repo to maintain the original. I have merged the following PRs from [The Original](https://github.com/smicallef/spiderfoot/pulls)
 
@@ -20,7 +20,7 @@ I have forked this repo to maintain the original. I have merged the following PR
 For [Fixes #1897 #1900](https://github.com/smicallef/spiderfoot/pull/1900): 
 - I did a partial merge manually, bumping version numbers, and making code changes I felt wouldn't cause any issues. 
 
-
+All credit to the original authors, and the authors of these PRs. I take no credit for anything in this repo. 
 
 <a href="https://www.spiderfoot.net/r.php?u=aHR0cHM6Ly93d3cuc3BpZGVyZm9vdC5uZXQv&s=os_gh"><img src="https://www.spiderfoot.net/wp-content/themes/spiderfoot/img/spiderfoot-wide.png"></a>
 
