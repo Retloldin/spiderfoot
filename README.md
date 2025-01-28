@@ -183,7 +183,7 @@ To install and run SpiderFoot, you need at least Python 3.7 and a number of Pyth
 1. Run the Docker Compose file
 
     ```bash
-    sudo docker-compose -f docker-compose.yml -f docker-compose-full.yml up
+    sudo docker compose -f docker-compose.yml -f docker-compose-full.yml up
     ```
 
 Check out the [documentation](https://www.spiderfoot.net/documentation) and our [asciinema videos](https://asciinema.org/~spiderfoot) for more tutorials.
